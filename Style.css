@@ -1,0 +1,877 @@
+						
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+body { 
+		margin: 0;
+		padding: 0;
+		font-family: Roboto, "Open Sans", Arial, sans-serif;
+ }
+	
+
+																				/*PAGINA BUN VENIT*/
+
+
+.fundalBunVenit {
+	background-image: url("house.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.bunVenit {
+	display: block;
+	margin: auto;
+}
+.logoBunVenit {
+	display: block;
+	float: left;
+	flex-wrap: wrap;
+	margin-top: 12vw;
+	margin-left: 6vw;
+	text-align: center;
+}
+
+.logoBunVenit > * { 
+	transform: translateY(30px);
+	transition: transform 0.25s;
+ }
+
+.logoBunVenit:hover > * {
+		transform: translateY(0);	
+} 
+
+.bunVenit h1 {
+  letter-spacing: 8px;
+	font-size: 75px;
+	font-weight: bolder;
+	color: darkblue;
+}
+
+.bunVenit h3 { 
+ 	letter-spacing: 7px; 
+ 	font-size: 25px;
+ 	margin-top: -55px;
+  }
+
+.buton {
+	float: right;
+ 	border-radius: 6px;
+ 	text-decoration: none;
+ 	font-size: 15px;
+ 	font-weight: bolder;
+  padding: 20px 30px;
+  color: white;
+  background-color: #5B485B;
+  margin-right: 6vw;
+  margin-top: 6vw;
+  }
+
+.buton:hover {
+  box-shadow: 4px -4px 10px #ffb703;
+  color: #ffb703; ;
+  }
+
+.citat { 
+	float: right;
+	margin-top: 12vw;
+	margin-right: -11vw;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+
+  																				/*PAGINA INDEX HTML*/
+
+
+.fundalIndex { 	
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #ece4db; 
+	-webkit-animation-name: fundalColorat;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in;
+	animation-name: fundalColorat; 
+	animation-duration: 20s;
+	animation-iteration-count: infinite; /*de cate ori sa se repete ciclul*/
+	animation-timing-function: ease-in; /* cat de incet sa ruleze, sa ruleze incet*/
+}
+
+@keyframes fundalColorat {
+	0%   { background-color: #ece4db; } /*crem*/
+	33%  { background-color: #97aac0; }	/*albastru */
+	66%  { background-color: #ece4db; }
+	75%  { background-color: #97aac0; }
+	100% { background-color: #ece4db; }
+	}
+
+.header { 
+	display: block;
+	text-align: center;
+}
+
+.logoIndex {
+	margin-top: 0;
+	text-align: center;
+	line-height: 0.8;
+}
+
+.paragraf1 {
+	color: #345e85;
+	text-shadow: 2px 2px 8px black;
+	font-weight: bolder;
+	font-size: 100px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.paragraf2 {
+	color: #345e85;
+	font-weight: bolder;
+	padding: 0;
+	margin-top: 0;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.logoIndex a { text-decoration: none; }
+
+.anc { margin-top: 50px; }
+
+#ancora { 
+	border-radius: 6px;
+	font-weight: bolder;
+	font-size: 1.4em;
+	text-decoration: none;
+	color:  #1F3865; 
+	padding: 10px 30px;
+	text-shadow: 3px 3px 3px white;
+}
+
+#ancora:hover { 
+	cursor: pointer;
+	box-shadow: 2px 2px 10px #000000;
+	color: #000000;
+ }
+
+#ancora:visited { color: #1F3865; }
+
+#ancora:active {
+	color: black;
+}
+
+.lorem p { 
+	word-break: keep-all;
+	font-weight: bolder;
+	text-align: justify;
+	text-align-last: left;
+	text-shadow: -2px -2px 8px #ece4db;
+	font-size: 20px;
+	margin: 80px 60px;
+}
+
+/* Imaginile din pagina principala */
+
+.imagini {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 100px;
+}
+
+.imagini img {
+	width: 350px;
+	height: 250px;
+	margin-top: 30px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 8px #000000;
+}
+
+.imagini img:hover { 
+	-webkit-transform: scale(1.3);
+	-webkit-transition: 2s ease;
+	transform: scale(1.3); 
+	transition: 2s ease;
+} 
+
+.paragraf3 {
+	word-break: keep-all;
+	font-weight: bolder;
+	text-align: justify;
+	text-align-last: center;
+	text-shadow: -4px -4px 8px #ece4db;
+	font-size: 25px;
+}
+
+/* Partea de acordeon */
+
+.containerAcordeon {
+	margin-top: 5px;
+	padding-bottom: 30px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.acordeon {
+	float: left;
+	margin-top: 30px;
+	margin-left: 40px;
+	width: 60%;
+	box-sizing: border-box;
+}
+
+.acordeonItem { 
+	float: left;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border-bottom: 1px solid black;
+}
+
+.acordeonItem:nth-child(5) {
+	border-bottom: none;
+}
+
+ .acordeonTitlu {
+ 	text-decoration: none;
+ 	cursor: pointer;
+	color: black;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.fa-plus-circle { padding-right: 20px; }
+
+.acordeonTitlu .fa-minus-circle { display: none; } /* in prima faza dispare iconita minus, este afisata doar cea de plus*/
+
+.open .acordeonTitlu .fa-plus-circle {  display: none; }
+
+.open .acordeonTitlu .fa-minus-circle { 
+display: inline;
+padding-right: 20px;
+}
+
+.open .acordeonTitlu { color: #345E85; }
+
+.close .acordeonContinut {
+	height: 0;
+	-webkit-transform: scaleY(0);
+	-o-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform: scaleY(0);
+	float: left;
+	display: block;
+}
+
+.open .acordeonContinut {
+ 	width: 100%;
+  display: block;
+  box-sizing: border-box;
+  word-break: keep-all;
+  color: #606060;
+
+  -webkit-transform: scaleY(1);
+  -o-transform: scaleY(1);
+ 	-ms-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: top;
+  -o-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+
+  -webkit-transition: -webkit-transform 1s ease-out;
+  -o-transition: -o-transform 1s ease;
+  -ms-transition: -ms-transform 1s ease;
+  transition: transform 1.5s ease; 
+}
+
+.fotoIngineri {
+	float: right;
+	margin: 60px 15px 0px 30px;
+	width: 340px;
+}
+
+.containerAcordeon img {
+	width: 340px;
+	height: 320px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 8px #000000;
+	filter: contrast(100%);
+	filter: brightness(80%);
+}
+
+
+/* Footer, toate, de pe paginile unde apare */
+
+footer {
+	display: block;
+	background-color: rgba(51, 51, 51, 0.4); 
+	margin-top: 100px;
+	text-align: center;
+	margin-bottom: -15px;
+ }
+
+.contact {
+	font-size: 16px;
+	font-weight: bolder;
+	padding-top: 100px;
+	 }
+
+.contact a { text-decoration: none; }
+.contact a:active { color: white; }
+
+.social {
+	display: flex;
+	justify-content: center;
+}
+
+.fab {
+	font-size: 30px;
+	margin: 0 5px;
+	color: #023e8a;
+	width: 30px;
+	height: 30px;
+}
+
+.fab:hover { color: black; }
+
+.copy	{ text-align: center; }
+
+
+																						/* PAGINA SERVICII */
+
+.fundalServicii { background-color: #ece4db; }
+
+.fundalServicii h1 { 	
+	color: black;
+	text-align: center;
+	font-size: 35px;
+	font-weight: bolder;
+	margin-top: 50px;
+	}
+
+.column {
+	margin: 20px;
+	columns: 3vw 3;
+	column-rule: 1px double #97aac0;
+	column-gap: 3rem;
+}
+
+.column p { 
+	margin-top: 0; 
+	text-align: justify;
+	word-break: keep-all;
+}
+
+.manopere { margin-top: 50px; }
+
+.manopere p {
+	margin-top: 100px;
+	text-align: center;
+	font-weight: bolder;
+	color: #145e85;
+	font-size: 20px;
+}
+
+.manopere ul {
+	line-height: 1.6;
+	font-weight: bolder;
+}
+																/*Imagini cu scris peste*/
+
+.titlu {
+	text-align: center;
+	font-weight: bolder;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.container { 
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+	border: 2px solid black;
+	box-shadow: 2px 2px 20px #000000;
+	width: 100%;
+	height: 100%;
+	}
+
+.container img {
+	width: 400px;
+	height: 400px;
+	box-shadow: 2px 2px 20px #000000;
+	border-radius: 5px;
+}
+
+.block {
+	position: relative;
+ 	width: 400px;
+ 	height: 400px;
+ 	display: inline-block;
+ 	margin-top: 50px;
+ 	margin-bottom: 50px;
+}
+
+.acoperire1, .acoperire2, .acoperire3, .acoperire4, .acoperire5, .acoperire6, 
+.acoperire7, .acoperire8, .acoperire9, .acoperire10, .acoperire11, .acoperire12,
+.acoperire13, .acoperire14, .acoperire15, .acoperire16, .acoperire17, .acoperire18 {
+	position: absolute;
+	border-radius: 5px;
+	width: 400px;
+ 	height: 400px;
+ 	background: rgba( 75, 108, 153, 0.8);
+ 	top: 0;
+ 	left: 0;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	line-height: 1.4;
+ 	opacity: 0;
+ 	-webkit-transition: opacity 0.60s;
+ 	transition: opacity 0.60s;
+}
+
+.acoperire1  > *, .acoperire2  > *, .acoperire3 > *, .acoperire4 > *, .acoperire5  > *, .acoperire6 > * ,
+.acoperire7 > *, .acoperire8  > *,.acoperire9 > *, .acoperire10 > *, .acoperire11  > *, .acoperire12 > *, 
+.acoperire13 > *, .acoperire14  > *, .acoperire15 > *, .acoperire16 > *, .acoperire17  > *, .acoperire18 > * {
+	transform: translateY(300px);
+	transition: transform 0.50s;
+	margin: 0px 10px;
+}
+
+ .acoperire1:hover, .acoperire2:hover, .acoperire3:hover, .acoperire4:hover, .acoperire5:hover, .acoperire6:hover , .acoperire7:hover, .acoperire8:hover, .acoperire9:hover,
+ .acoperire10:hover, .acoperire11:hover, .acoperire12:hover , .acoperire13:hover, .acoperire14:hover, .acoperire15:hover, .acoperire16:hover, .acoperire17:hover, .acoperire18:hover
+ {
+	opacity: 1;
+}
+
+
+.acoperire1:hover > *, .acoperire2:hover > *, .acoperire3:hover > * , .acoperire4:hover > *, .acoperire5:hover > *, .acoperire6:hover > * , .acoperire7:hover > *, .acoperire8:hover > *, .acoperire9:hover > * ,
+.acoperire10:hover > *, .acoperire11:hover > *, .acoperire12:hover > * , .acoperire13:hover > *, .acoperire14:hover > *, .acoperire15:hover > * , .acoperire16:hover > *, .acoperire17:hover > *, .acoperire18:hover > * 
+ {
+	transform: translateY(250px);
+	
+}
+
+.titlu {
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+
+.descriere {
+	font-size: 1rem;
+	margin-top: 5px;
+	text-align: center;
+}
+	
+/* Scroll pagina servicii si portofoliu */
+
+.sageata {
+	display: flex;
+	float: right;
+	margin-right: 30px;
+	margin-bottom: 50px;
+}
+
+.sageata a {
+	width: 100%;
+	float: right;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	background: white;
+	text-decoration: none;
+	text-align: center;
+	text height: 50px;
+	color: #fff;
+	line-height: 2;
+	font-size: 25px;
+}
+
+html { scroll-behavior: smooth; }
+
+
+																		/* PAGINA PORTOFOLIU PROIECTE */
+
+
+.fundalPortofoliu {
+	background-color: rgb(189, 195, 199);
+}
+
+.fundalPortofoliu h1 {
+	font-size: 25px;
+	color: #4b6c99;
+	margin-bottom: 40px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.paragraf { 
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+	margin-bottom: 100px;
+ }
+
+.containerMare { 
+	width: 100%;
+	margin-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+/* Slider */   	
+
+.containerSlider {    /* Contine si punctele */
+	border: 3px solid rgba(0, 0, 0, 0.2);
+	width: 580px;
+	height: 400px;
+	margin-bottom: 60px;
+}
+
+.slideshow-container {  /* Nu contine punctele, doar sagetile */
+	float: left;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides img, .mySlides2 img, .mySlides3 img, .mySlides4 img, .mySlides5 img, .mySlides6 img, 
+.mySlides7 img, .mySlides8 img, .mySlides9 img, .mySlides10 img, .mySlides11 img, .mySlides12 img { 
+	width: 580px;
+	height: 400px;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 18px;
+	margin-top: -22px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: auto;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {background-color: rgba(0, 0, 0, 0.8); }
+
+.text { 
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%; 
+	text-align: center;
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 5px;
+}
+
+.spanuri { text-align: center; }
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2;
+	margin-top: 15px;
+	background-color: #999999;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	position: relative;
+}
+
+.active, .dot:hover { background-color: #111111; }
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Partea aside */
+
+.asideSlider {
+	border: 3px solid rgba(0, 0, 0, 0.2);
+	width: 580px;
+	height: 400px;
+	display: block;
+	text-align: justify;
+	margin-bottom: 60px;
+}
+
+.asideSlider aside {
+	padding: 10px 30px;
+}
+
+																		/* PAGINA DE CONTACT*/
+
+.fundalContact {
+	background-color: #e3e3e3;
+}
+
+/* Antetul, TOATE HEADER-urile in afara de pagina principala*/
+
+.headerSpace { 
+	margin: auto;
+	background-color: #4b6c99;  
+	height: 120px;
+	text-align: right;
+}
+
+ /* Toate lik-urile din heading (antet) din pagini*/
+
+.headerSpace nav { 
+	padding: 20px; }
+
+.headerSpace a { 
+	text-decoration: none;
+	font-size: 1rem ;
+	font-weight: bolder;
+	margin: 10px;
+	color: #ece4db;
+	text-shadow: 3px -2px 4px black;
+}
+
+.headerSpace a:hover { 
+	text-decoration: none;
+	cursor: pointer;
+	box-shadow: 5px 5px 5px #f2f2f2;;
+	border-radius: 6px;
+	padding: 8px 12px;
+	background: linear-gradient(to right, #f0ebd8, #97aac0, #f0ebd8 );
+	color: black;
+	text-shadow: none;
+  }
+
+.container1 {
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap; 
+	width: 100%;
+	height: 100%;
+}
+
+/* Partea din stanga */
+
+.left {
+	margin-top: 40px;
+	width: 40%;
+	height: 100%;
+	float: left;
+	display: block;
+}
+
+
+.imagine {	 	         /* Imagine sediu */
+	border-radius: 6px;
+	height: 400px;
+	width: 42vw; 
+}
+
+.left h3 { 
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-weight: bolder; 
+}
+
+.left address { 
+margin-top: -20px;
+text-align: left;
+ }
+
+.left a { text-decoration: none;  }
+
+.left a:active { color: #485665;}
+
+.harta { margin-top: 20px; }
+
+.harta label { font-weight: bolder; }
+
+.harta iframe { 
+	border: 2px solid gray;
+	border-radius: 6px;
+	height: 400px;
+	width: 42vw; 
+	margin-bottom: 40px;
+}
+
+#harta { margin-top: 5px; }
+
+								/* Partea din dreapta*/
+
+.right {
+	margin-top: 40px;
+	width: 40%;
+	height: 100%;
+	border: 2px solid gray;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	float: right;
+}
+
+.right h1 {
+	margin: 0;
+	text-align: left;
+	font-size: 25px;
+}
+
+.right label { font-weight: bolder; }
+
+input[type="email"], input[type="tel"], select, textarea, input[type="file"], input[type="text"] {
+	width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; 
+} 
+
+.texte div {
+	width: 45%;
+	display: inline-block; 
+	margin-right: 10px;
+}
+
+#textarea { cursor: help; }
+
+#reset, #fisier { cursor: pointer;}
+  
+input[type="submit"] {
+ 	background-color:  #5074a5;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type="submit"]:hover {
+	color: black;
+	font-weight: bolder;
+	background: linear-gradient( to bottom, #5074a5, #ffffff);
+}
+
+#fisier { background-color: #97aac0; }
+
+
+input[type="textarea"] { border: 2px solid #97aac0; }
+
+input[type="reset"] {
+	padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color:  #f0ebd8;;
+  }
+
+input[type="date"] {
+	margin-bottom: 30px;
+	margin-left: 28px;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+
+	 											/* RESPONSIVE */
+
+@media screen and (max-width: 575.98px) {
+
+/* Pagina bun venit */	
+.logoBunVenit{
+	margin-top: 4vw;
+	margin-left: 6vw;
+	}
+.buton {
+	margin-right: 8vw;
+  padding: 18px 25px;
+  font-size: 15px;
+}
+.citat {
+	margin-top: 8vw;
+	margin-right: 8vw;
+	font-size: 1.6rem;
+}
+
+/* Pagina principala */
+.anc a { display: block; } 
+
+/* Pagina Portofoliu */
+.asideSlider {
+	display: block;
+	font-size: 14px;
+}
+
+/* Pagina Contact */
+/*heading */
+.headerSpace a { display: block; }
+
+.imagine, .harta iframe { height: 200px; }
+}
+
+
+@media screen and (min-width: 575.98px) and (max-width: 991.98px) {
+
+/* Pagina bun venit */	
+.logoBunVenit{
+	margin-top: 2vw;
+	margin-left: 6vw;
+	}
+.buton {
+	margin-right: 8vw;
+  padding: 20px 30px;
+  font-size: 25px;
+}
+.citat {
+	float: left;
+	margin-top: 8vw;
+	margin-left: 4vw;
+	font-size: 1.6rem;
+	font-weight: bolder;
+}	
+
+/* Pagina Contact */
+
+/*heading */
+.headerSpace a { display: block; }
+
+.imagine, .harta iframe { height: 250px; }
+
+}
+
